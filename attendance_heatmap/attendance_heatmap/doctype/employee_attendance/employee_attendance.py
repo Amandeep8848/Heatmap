@@ -15,3 +15,8 @@ class EmployeeAttendance(Document):
 		# check if the attendance is already marked
 		if frappe.db.exists("Employee Attendance",{"employee":self.employee,"date":self.date}):
 			frappe.throw(_(f"You have already marked the attendance for {self.date}"))
+
+		if self.half_day and not self.present:
+			frappe.throw(_("You need to check on present to apply for half day"))
+		elif not self.half_day and not self.present:
+			frappe.throw(_("Pls check on present to mark your attendance"))
