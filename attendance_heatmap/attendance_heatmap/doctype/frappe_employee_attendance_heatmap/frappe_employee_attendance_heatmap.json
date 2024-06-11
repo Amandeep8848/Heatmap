@@ -14,8 +14,10 @@
   {
    "fieldname": "employee",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Employee",
-   "options": "Employee Details"
+   "options": "Employee Details",
+   "reqd": 1
   },
   {
    "fieldname": "html",
@@ -26,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-29 11:48:10.892022",
+ "modified": "2024-06-11 14:03:44.694136",
  "modified_by": "Administrator",
  "module": "Attendance Heatmap",
  "name": "Frappe Employee Attendance Heatmap",
