@@ -68,6 +68,7 @@ function add_custom_legend() {
         { color: color["present"], label: 'Present' },
         { color: color["leaves"], label: 'Leaves' },
         { color: color["joining_date"], label: 'Before Joining and Future Days' },
+		{ color: color["half_day"], label: 'Half Day'}
     ];
 
 	create_legend(legendItems);

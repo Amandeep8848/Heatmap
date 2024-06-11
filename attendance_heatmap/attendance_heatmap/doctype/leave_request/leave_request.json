@@ -1,16 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-04-29 11:32:58.001131",
+ "creation": "2024-06-11 13:24:41.649133",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "employee",
-  "present",
-  "half_day",
-  "date"
+  "from_date",
+  "to_date"
  ],
  "fields": [
   {
@@ -20,29 +19,22 @@
    "options": "Employee Details"
   },
   {
-   "default": "0",
-   "fieldname": "present",
-   "fieldtype": "Check",
-   "label": "Present"
-  },
-  {
-   "fieldname": "date",
+   "fieldname": "from_date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "From Date"
   },
   {
-   "default": "0",
-   "fieldname": "half_day",
-   "fieldtype": "Check",
-   "label": "Half Day"
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 13:19:47.414007",
+ "modified": "2024-06-11 13:24:41.649133",
  "modified_by": "Administrator",
  "module": "Attendance Heatmap",
- "name": "Employee Attendance",
+ "name": "Leave Request",
  "owner": "Administrator",
  "permissions": [
   {
